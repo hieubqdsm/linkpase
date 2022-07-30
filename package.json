@@ -13,8 +13,6 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://hieubqdsm.github.io/linkpase/",
-
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
