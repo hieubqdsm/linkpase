@@ -43,7 +43,7 @@
 }
 .segment{
   margin: auto;
-  width: 900px;
+  max-width: 900px;
 }
 .element a{
   text-decoration:none;
@@ -67,16 +67,19 @@
   background-color: #e0e0e0;
   color: #444444;
 }
+.element p{
+  margin:25px 0;
+}
 .title{        
   color: #4f6d7aff;
   font-family: "Montserrat", sans-serif;
-  font-size: 3vw;        
+  font-size: 40px;        
 }
 h1{
   text-align: center;
   color: #4f6d7aff;
   font-family: "Montserrat", sans-serif;
-  font-size: 4vw;
+  font-size: 40px;
   text-transform: uppercase;
 }
 .tooltip {
