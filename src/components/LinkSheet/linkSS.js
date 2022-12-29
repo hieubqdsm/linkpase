@@ -19,7 +19,6 @@ const App = () => {
 
     let arr_str = JSON.stringify(data);
     let arr = JSON.parse(arr_str);
-    let i = 1;
 
     <div class="segment">
     </div>

@@ -4,7 +4,6 @@ import LinkSS from "./components/LinkSheet/linkSS";
 import LinkOther from "./components/LinkSheet/linkOther";
 import React, { useState } from "react";
 import NavBar from './components/navi';
-import LinkSheet from './components/linkSheet';
 const renderBody = (BodyItem = "PASE") => {
   // setState({BodyItem: BodyItem});
   switch (BodyItem) {
