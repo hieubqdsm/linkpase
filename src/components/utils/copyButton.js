@@ -1,17 +1,26 @@
 const copyUrl = (id) => {
-    var copyText = document.getElementById(parseInt(id));
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
+    console.log('xxxxxx');
+    try {
+        const copyText = document.getElementById(parseInt(id));
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
 
-    var tooltip = document.getElementById("myTooltip" + id);
-    tooltip.innerHTML = "Copied";
+        const tooltip = document.getElementById("myTooltip" + id);
+        tooltip.innerHTML = "Copied";
+
+    } catch (error) {
+        console.log(error);
+    }
 }
-
 const outFunc = (id) => {
-    var tooltip = document.getElementById("myTooltip" + parseInt(id));
-    tooltip.innerHTML = "Copy to clipboard";
+    try {
+        var tooltip = document.getElementById("myTooltip" + parseInt(id));
+        tooltip.innerHTML = "Copy to clipboard";
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-export {copyUrl};
-export {outFunc};
+export { copyUrl };
+export { outFunc };

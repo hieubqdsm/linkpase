@@ -3,10 +3,9 @@ import useGoogleSheets from 'use-google-sheets';
 //sheetsOptions: [{ id: 'Sheet1' }],
 const App = () => {
     const { data, loading, error } = useGoogleSheets({
-        apiKey: "AIzaSyAslzjQRNSJLV74C_L_JluxpKVjWj5F2jY",
-        sheetId: "1kQw7PNjtoVjF52ZsQg1i5UBLPj4rK_Z8mawi2MXCgEM",
+        apiKey: process.env.REACT_APP_API_KEY,
+        sheetId: process.env.REACT_APP_SHEET_ID,
     });
-    console.log( process.env.REACT_APP_API_KEY);
     if (loading) {
         return <div>Loading...</div>;
     }

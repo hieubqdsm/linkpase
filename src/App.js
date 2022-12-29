@@ -1,6 +1,7 @@
 import './App.css';
-import LinkPase from "./components/listPase";
-import LinkSS from "./components/listSS";
+import LinkPase from "./components/LinkSheet/linkPASE";
+import LinkSS from "./components/LinkSheet/linkSS";
+import LinkOther from "./components/LinkSheet/linkOther";
 import React, { useState } from "react";
 import NavBar from './components/navi';
 import LinkSheet from './components/linkSheet';
@@ -12,7 +13,7 @@ const renderBody = (BodyItem = "PASE") => {
     case "SS":
       return <LinkSS />;
     case "Other":
-      return <LinkSheet />;
+      return <LinkOther />;
     default:
       return <LinkPase />;
   }
